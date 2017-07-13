@@ -1,29 +1,34 @@
 $(function() {
 
-	//SVG Fallback
-	if(!Modernizr.svg) {
-		$("img[src*='svg']").attr("src", function() {
-			return $(this).attr("src").replace(".svg", ".png");
-		});
-	};
-
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			alert("Thank you!");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-			}, 1000);
-		});
-		return false;
-	});
+    $("form").submit(function() { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function() {
+            $('.hid').hide();
+            $('.thanks').show();
+            $('.thanks .popup').animate({
+                top: '30%',
+                opacity: 1
+            }, 800 );
+            th.trigger("reset");
+            $('.popup-sms').slideUp( 100 ).delay( 800 ).fadeIn( 400 );
+        }).success (function(){
+            $(dataLayer.push({'event': 'west_coast_nadia'}));
+        });
+
+        return false;
+    });
+
+	/* pagescroll2id */
+    $(".down, nav a").mPageScroll2id({
+        scrollSpeed: 1000,
+        offset:30
+    });
 
 	//Chrome Smooth Scroll
 	try {
@@ -54,6 +59,30 @@ $(function() {
 
         return false;
     });
+});
+
+/* open menu */
+$('.nav-menu').not('.close-btn').click(function(){
+    $(this).hide();
+   $('.close-btn').show();
+   $('.menu').addClass('mobile-menu');
+   $('#top-line').css('top','0');
+});
+/* close menu */
+$('.mobile-menu nav a, .close-btn').click(function(e) {
+    e.preventDefault();
+    $(this).hide();
+    $('.nav-menu').show();
+    $('.menu').removeClass('mobile-menu')
+});
+/* close menu */
+$('nav a').click(function() {
+    if (innerWidth < 992) {
+        $('.close-btn').hide();
+        $('.nav-menu').show();
+        $('.menu').removeClass('mobile-menu');
+    }
+
 });
 
 // slider reviews

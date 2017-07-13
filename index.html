@@ -21,12 +21,9 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="libs/animate/animate.css">
 
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
-
-	<script src="libs/modernizr/modernizr.js"></script>
 
 </head>
 
@@ -39,7 +36,7 @@
 				<div class="top-line">
 
 					<!-- Logo -->
-					<div class="col-md-2 col-sm-2 col-xs-5 phone-mob">
+					<div class="col-md-2 col-sm-2 col-xs-4 phone-mob">
 						<div class="logo">
 							<a href="index.html"><img src="img/logo.svg" alt="West Coast Moving"></a>
 						</div>
@@ -47,26 +44,31 @@
 					</div>
 
 					<!-- nav -->
-					<div class="col-md-8 col-sm-7">
+					<div class="col-md-8 col-sm-7 menu">
+						<div class="close-btn"></div>
 						<div class="nav">
 							<nav>
-								<a href="#top" class="active">Home</a>
+								<a href="#home">Home</a>
 								<a href="#services">Services</a>
 								<a href="#benefits">Benefits</a>
 								<a href="#pricing">Pricing</a>
 								<a href="#about">About us</a>
 								<a href="#reviews">Reviews</a>
-								<a id="quote-btn" href="#quote">Get a Quote</a>
+								<a id="quote-btn" href="#contacts">Get a Quote</a>
 							</nav>
+
+							<div class="phone phone-hide">
+								<a href="tel:+18446467252"><p>Open 24 hours<span>(323) <span>645-9898</span></span></p></a>
+							</div>
 						</div>
 					</div>
 
 					<!-- phone -->
-					<div class="col-md-2 col-sm-3 col-xs-7 w-max">
+					<div class="col-md-2 col-sm-4 col-xs-8 w-max">
 						<div class="phone">
-							<div class="nav-menu"></div>
 							<a href="tel:+18446467252"><p>Open 24 hours<span>(323) <span>645-9898</span></span></p></a>
 						</div>
+						<div class="nav-menu"></div>
 					</div>
 
 				</div>
@@ -102,7 +104,7 @@
 							</form>
 
 							<!-- Btn DOWN -->
-							<div class="btn-down"></div>
+							<a class="down" href="#contacts"><div class="btn-down"></div></a>
 						</div>
 
 					</div><!-- / .home -->
@@ -526,7 +528,7 @@
 						</div>
 
 						<!-- Right-sidebar -->
-						<div class="right-sidebar">
+						<div id="contacts" class="right-sidebar">
 							<h2>Leave the application<span>and our manager will contact you.</span></h2>
 
 							<div class="form-f">
@@ -608,20 +610,8 @@
 		</div>
 	</footer>
 
-
-
-
-	<!--[if lt IE 9]>
-	<script src="libs/html5shiv/es5-shim.min.js"></script>
-	<script src="libs/html5shiv/html5shiv.min.js"></script>
-	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
-	<script src="libs/respond/respond.min.js"></script>
-	<![endif]-->
-
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	<script src="libs/waypoints/waypoints.min.js"></script>
-	<script src="libs/animate/animate-css.js"></script>
-	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="libs/page2scroll/scroll2id.js"></script>
 	
 	<script src="js/common.js"></script>
 	

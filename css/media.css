@@ -2,17 +2,54 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	.phone p > span {
+		font-size: 18px;
+	}
+	.phone p {
+		font-size: 13px;
+	}
+	.about-comments {
+		background-position: center;
+	}
+	.about {
+		min-height: 605px;
+	}
+	.right-sidebar {
+		padding: 90px 15px 120px 30px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+	.nav-menu{
+		display: block;
+	}
+	.nav{
+		display: none;
+	}
+	.home{
+		padding-left: 0;
+	}
+	.block-benefits {
+		padding: 0px 2%;
+	}
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-	
+
+	.partners-img img{
+		width: 100%;
+		padding: 0 10px;
+	}
+	.about-comments{
+		display: none;
+	}
+	.about > div {
+		width: 100%;
+	}
+
 	/*Disable Animation on Mobile Devices*/
 	.animated {
 		/*CSS transitions*/
@@ -38,7 +75,222 @@
 }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width : 700px) {
+	.end {
+		display: flex;
+		justify-content: center;
+		flex-direction: column-reverse;
+	}
+	.left-sidebar,.right-sidebar {
+		width: 100%;
+	}
+	.contacts {
+		padding: 9% 15px;
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+	}
+	.contacts >div{
+		margin-bottom: 0px;
+	}
+	.w-max {
+		justify-content: flex-end;
+	}
+	.nav-menu{
+		margin-left: 20px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 600px) {
+	.input-wrap{
+		display: none;
+	}
+	.top-form {
+		padding-top: 80px;
+	}
+	#home {
+		padding: 100px 0;
+		padding-bottom: 85px;
+	}
+	.block-services {
+		width: 100%;
+	}
+	.block-services {
+		width: 100%;
+		min-height: 164px;
+	}
+	.serv-hover {
+		margin: 25px;
+	}
+	.block-services-wrap {
+		padding-top: 40px;
+	}
+	section {
+		padding: 100px 0;
+	}
+	.block-benefits {
+		width: 50%;
+		margin-top: 35px;
+	}
+	.title-section p {
+		font-size: 15px;
+	}
+	.block-price {
+		width: 100%;
+	}
+	.block-pricing-wrap {
+		margin-top: 35px;
+		flex-direction: column;
+	}
+	.title-section h2 {
+		font-size: 35px;
+		margin-bottom: 20px;
+	}
+	.block-price {
+		margin-bottom: 15px;
+	}
+	.rev-img-wrap, .partners {
+		overflow-x: scroll;
+	}
+	.rev-img-wrap::-webkit-scrollbar,
+	.partners::-webkit-scrollbar {
+		width: 1px;
+	}
+	.partners-img img {
+		width: auto;
+	}
+	.rev-img {
+		position: static;
+		margin: 0 5px;
+	}
+	.rev-img-wrap {
+		margin-top: 45px;
+		height: auto;
+	}
+	section {
+		padding: 60px 0;
+	}
+	.about {
+		min-height: 530px;
+	}
+	.right-sidebar {
+		padding: 65px 20px 65px 20px;
+	}
+	.form-f form > p {
+		padding-top: 0;
+	}
+	.title-section br{
+		display: none;
+	}
+}
+
+/* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	h1 {
+		font-size: 53px;
+	}
+	.home p {
+		font-size: 21px;
+	}
+	.top-form {
+		padding-top: 55px;
+	}
+	input[type='submit'] {
+		margin-left: 0px;
+	}
+	#home {
+		padding-bottom: 65px;
+	}
+	.title-section{
+		padding: 0 10px;
+	}
+	.serv-hover {
+		font-size: 15px;
+	}
+	.block-services h3 {
+		font-size: 30px;
+	}
+	.block-benefits {
+		width: 100%;
+	}
+	.about-descr .title-section p {
+		font-size: 15px;
+	}
+	.about {
+		min-height: 460px;
+	}
+	.rev-text p {
+		font-size: 14px;
+	}
+	.ness-un-ness {
+		flex-direction: column;
+	}
+	.un-ness label {
+		padding-left: 0px;
+	}
+	.ness {
+		width: 100%;
+	}
+	.another, .moving {
+		justify-content: space-between;
+	}
+	.another > label, .moving > label {
+		width: 48%;
+	}
+	.right-sidebar h2 {
+		font-size: 30px;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.right-sidebar h2 span {
+		font-size: 16px;
+		text-align: center;
+	}
+	.form-f input[type='submit'] {
+		float: none;
+		margin-right: 0;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.form-f form > p {
+		padding-top: 0;
+		text-align: center;
+	}
+	.contacts {
+		width: 100%;
+		flex-direction: column;
+	}
+	.address-block, .phone-block {
+		margin-bottom: 30px !important;
+	}
+	.contacts {
+		padding: 9% 30px;
+	}
+	.footer {
+		flex-direction: column;
+	}
+	.footer > div{
+		width: 100%;
+		text-align: center;
+	}
+	.footer span{
+		text-align: center;
+		font-size: 22px;
+	}
+	.copyright{
+		order: 3;
+	}
+	footer .phone{
+		padding: 25px 0;
+	}
+	.w-max .phone{
+		display: none;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 400px) {
 
 }
 
