@@ -166,6 +166,7 @@ h1 span{
 	letter-spacing: 0.2px;
 	color: #dedede;
 }
+input[type='button'],
 input[type='submit']{
 	font-size: 16px;
 	font-weight: bold;
@@ -184,6 +185,7 @@ input[type='submit']{
 }
 .rev-block a:hover,
 .block-price a:hover,
+input[type='button']:hover,
 input[type='submit']:hover{
 	background-color: #b1122c;
 }
@@ -573,16 +575,19 @@ footer{
 	display: flex;
 	justify-content: center;
 }
-.form-f label input{
+.form-f label input, select{
 	height: 40px;
 	margin-bottom: 15px;
 }
-.form-f label input, .form-f textarea{
+.form-f label input, .form-f textarea, select{
 	border-radius: 18px;
 	padding-left: 18px;
 	background-color: #ffffff;
 	border: solid 2px rgba(92, 99, 122, 0.21);
 	width: 100%;
+}
+select{
+	outline: none;
 }
 label > span{
 	font-size: 15px;
@@ -638,8 +643,14 @@ label > span{
 	display: flex;
 	justify-content: space-between;
 }
+.popup-form .ness-un-ness {
+	flex-direction: column;
+}
 .another,.moving{
 	display: flex;
+}
+.another > label,.moving > label{
+	width: 50%;
 }
 .form-f{
 	max-width: 585px;
@@ -737,4 +748,130 @@ input:required {
 	display: none;
 	float: right;
 	margin: 13px 0px;
+}
+
+/* popup */
+.popup-hid{
+	position: fixed;
+	background: url("../img/bg-serv-hover.png");
+	background-repeat: repeat;
+	background-attachment: scroll;
+	height: 100vh;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 2;
+	display: none;
+}
+.popup {
+	max-width: 600px;
+	height: auto;
+	position: relative;
+	top: 70%;
+	opacity: 0;
+	margin: 0 auto;
+	padding: 40px 0 40px;
+}
+.popup-sms{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.popup h3{
+	font-size: 37px;
+	font-weight: 300;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #ffffff;
+}
+.popup p{
+	font-size: 20px;
+	letter-spacing: 0.2px;
+	color: #ffffff;
+}
+.popup img{
+	margin-right: 20px;
+}
+.close {
+	background: url(../img/close-popup.svg);
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+	position: absolute;
+	right: 10px;
+	top: 0px;
+}
+.popup-form{
+	background-color: #f7f7f7;
+	max-width: 770px;
+}
+.popup-form .close{
+	background: url(../img/close-form.svg);
+	width: 19px;
+	height: 19px;
+	right: 20px;
+	top: 20px;
+}
+.wrap-div{
+	padding-top: 40px;
+	padding-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.wrap-div > div, .wrap-div > label{
+	width: 48%;
+}
+.popup-form{
+	padding: 55px 40px;
+	padding-bottom: 35px;
+}
+.form-small .another > label,.form-small .moving > label {
+	width: 48%;
+	padding: 0 !important;
+}
+.form-small input[type='submit'] {
+	float: none;
+	margin-left: 0px;
+	display: block;
+	margin: 0 auto;
+}
+.form-popup-wrap h2{
+	font-size: 37px;
+	font-weight: 300;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	color: #050c26;
+}
+.form-popup-wrap h2 span{
+	font-size: 20px;
+	letter-spacing: 0.2px;
+	display: block;
+	ine-height: 1;
+}
+.form-popup-wrap input + p{
+	font-size: 14px;
+	line-height: 1.43;
+	letter-spacing: 0.7px;
+	text-align: center;
+	color: #71717f;
+}
+.form-popup-wrap .ness {
+	width: 100%;
+}
+.form-small{
+	max-width: 100%;
+}
+.form-small .another{
+	justify-content: space-between;
+}
+.form-small textarea{
+	padding-top: 5px;
+	margin-bottom: 8px;
+	height: 198px;
+}
+.popup-hid::-webkit-scrollbar {
+	width: 1px;
+}
+.form-quote textarea{
+	height: 119px;
 }

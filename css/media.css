@@ -99,6 +99,19 @@
 	.nav-menu{
 		margin-left: 20px;
 	}
+	.wrap-div {
+		flex-direction: column;
+		align-items: center;
+	}
+	.form-small textarea {
+		height: 100px;
+	}
+	.popup-form {
+		max-width: 500px;
+	}
+	.wrap-div > div, .wrap-div > label {
+		width: 100%;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -182,6 +195,15 @@
 	}
 	.title-section br{
 		display: none;
+	}
+	.popup-form {
+		margin-bottom: 20px;
+	}
+	.popup-hid {
+		overflow: scroll;
+	}
+	.popup{
+		top:15% !important;
 	}
 }
 
@@ -287,11 +309,43 @@
 	.w-max .phone{
 		display: none;
 	}
+	.popup-form {
+		margin: 0 15px;
+	}
+	.form-popup-wrap h2 {
+		font-size: 32px;
+	}
+	.form-popup-wrap h2 span {
+		font-size: 18px;
+	}
+	.form-small .another {
+		flex-direction: column;
+	}
+	.form-small .another > label, .form-small .moving > label {
+		width: 100%;
+	}
+	.popup-form {
+		top: 5% !important;
+	}
+	.popup {
+		margin: 0 15px;
+	}
+	.popup img {
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+	.popup-sms {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 400px) {
-
+	.popup-form {
+		padding: 55px 20px;
+	}
 }
 
 /* Custom, iPhone Retina */

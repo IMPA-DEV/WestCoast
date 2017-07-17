@@ -19,6 +19,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
 	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
 
@@ -94,13 +95,13 @@
 							<form>
 								<div class="input-wrap">
 									<label for="from">
-										<input type="text" id="from" name="from" placeholder="Moving From">
+										<input type="text" id="from" form="quote-form" name="zip" placeholder="Moving From">
 									</label>
 									<label for="to">
-										<input type="text" id="to" name="to" placeholder="Moving To">
+										<input type="text" id="to" name="zipto" form="quote-form" placeholder="Moving To">
 									</label>
 								</div>
-								<input type="submit" value="GET FREE QUOTE">
+								<input id="free-quote" type="button" value="GET FREE QUOTE">
 							</form>
 
 							<!-- Btn DOWN -->
@@ -197,7 +198,7 @@
 								<img src="img/ben-3.svg" alt="">
 								<h3>MOVING INSURANCE</h3>
 								<p>We provide basic moving insurance
-									for your belongings for free </p>
+									for your belongings for free. </p>
 							</div>
 							<div class="block-benefits">
 								<img src="img/ben-4.svg" alt="">
@@ -247,21 +248,21 @@
 									<p>from <span>$89</span>/ hour</p>
 								</div>
 								<h3><span>2</span> Movers & Truck</h3>
-								<p><a href="#">BOOK NOW</a></p>
+								<p><a href="#" class="book-now">BOOK NOW</a></p>
 							</div>
 							<div class="block-price">
 								<div class="price-from">
 									<p>from <span>$119</span>/ hour</p>
 								</div>
 								<h3><span>3</span> Movers & Truck</h3>
-								<p><a href="#">BOOK NOW</a></p>
+								<p><a href="#" class="book-now">BOOK NOW</a></p>
 							</div>
 							<div class="block-price">
 								<div class="price-from">
 									<p>from <span>$149</span>/ hour</p>
 								</div>
 								<h3><span>4</span> Movers & Truck</h3>
-								<p><a href="#">BOOK NOW</a></p>
+								<p><a href="#" class="book-now">BOOK NOW</a></p>
 							</div>
 						</div>
 
@@ -349,7 +350,7 @@
 									<div class="rev-text">
 										<p>The two guys were professionally attired. I was on time but they were waiting for me at the storage where I kept my stuff. They were professional in disposition. I have moved around a bit, have been robbed, disrespected and had my stuff broken. They renewed my faith in Movers. I met West Coast Moving Company and will add them to MY LIST! Thank you guys, you are performing a wonderful service at an affordable price.</p>
 									</div>
-									<p><a href="#">Read on Yelp</a></p>
+									<p><a target="_blank" href="https://www.yelp.com/biz/west-coast-moving-company-santa-ana-3?hrid=Mq6d-H69TtRB9Wkkzgjj8A&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">Read on Yelp</a></p>
 								</div>
 
 								<!-- #2 -->
@@ -358,7 +359,7 @@
 									<div class="rev-text">
 										<p>West Coast Moving Co is the best. It's our second time using them to move within 1 year and they were great both times. We did a ton of reading and research it really helps to be organized! The crew is detail-oriented, works together like clockwork and observes safety protocol to protect their bodies from the heavy lifting. We made charts of the rooms and areas in our old house and our new house and labeled each box and item with the room letter so they could tell where the items went when we arrived. Before we started, we gave them instructions and did walkthroughs in both houses to show them where things were and where they went. As our things were brought over, it began to feel more like our own home.</p>
 									</div>
-									<p><a href="#">Read on Yelp</a></p>
+									<p><a target="_blank" href="https://www.yelp.com/biz/west-coast-moving-company-santa-ana-3?hrid=pHHvcy_3HZSV6hkX507MKQ&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">Read on Yelp</a></p>
 								</div>
 
 								<!-- #3 -->
@@ -367,7 +368,7 @@
 									<div class="rev-text">
 										<p>They were done in less than the time minimum with three loading spots and one spot to unload. Very friendly, out going and efficient. We had Thomas and David, and they were amazing. They made our move so much easier and faster than we could ever imagine. I would definitely recommend this company to any one. We will be using them any time we ever have to move from now on!</p>
 									</div>
-									<p><a href="#">Read on Yelp</a></p>
+									<p><a target="_blank" href="https://www.yelp.com/biz/west-coast-moving-company-santa-ana-3?hrid=l9wrtToHJMdsCbfNeKhtbA&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">Read on Yelp</a></p>
 								</div>
 
 								<!-- #4 -->
@@ -376,7 +377,7 @@
 									<div class="rev-text">
 										<p>This time around, I am so glad we found West Coast Moving. West Coast Moving moved us from Long Beach to Lake Forest on a Friday. They gave us a rate that was highly competitive and all inclusive.  Like the other reviewers stated, no surprises. Everything went very smoothly. They even included wardrobe boxes, packing boxes, blankets, tape, etc. in our hourly rate. The movers seemed to have years of experience and were very safe and professional. They took care of our stuff like it was their own.  Also, unlike previous movers, they left the home we were leaving in great condition so that clean-up was easy.</p>
 									</div>
-									<p><a href="#">Read on Yelp</a></p>
+									<p><a target="_blank" href="https://www.yelp.com/biz/west-coast-moving-company-santa-ana-3?hrid=C0jaioGuLC-uhSt-6W3flw&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">Read on Yelp</a></p>
 								</div>
 
 								<!-- #5 -->
@@ -385,7 +386,7 @@
 									<div class="rev-text">
 										<p>West Coast Moving Company was great. A day or two before the move, I received a call to confirm that all was going according to schedule, and to confirm the exact time window that the movers would arrive  8.30-9.00  On moving day, I received a call from the movers to inform me that they were about 45 minutes away, and they arrived exactly on time. They were very careful with the few boxes I pointed out as being fragile, and there were no damages to any of my belongings. All in all, I had a great experience using West Coast Moving Company and I wouldn't hesitate to use them again.</p>
 									</div>
-									<p><a href="#">Read on Yelp</a></p>
+									<p><a target="_blank" href="https://www.yelp.com/biz/west-coast-moving-company-santa-ana-3?hrid=kdGnCv-ORCeAD5C1y0dkhg&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">Read on Yelp</a></p>
 								</div>
 
 								<!-- #6 -->
@@ -394,7 +395,7 @@
 									<div class="rev-text">
 										<p>Guys were fantastic. They were short-handed, they were supposed to have an additional mover with them but had a scheduling issue. They worked their hind ends off to get the move done as quickly as possible. From the beginning it was a total pleasure to work with West Coast Moving Company . Worked their hearts out and moved faster than I thought was possible. BRAVO</p>
 									</div>
-									<p><a href="#">Read on Yelp</a></p>
+									<p><a target="_blank" href="https://www.yelp.com/biz/west-coast-moving-company-santa-ana-3?hrid=QXrhW7-9svmSmccQfDBjJg&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">Read on Yelp</a></p>
 								</div>
 
 								<!-- #7 -->
@@ -403,7 +404,7 @@
 									<div class="rev-text">
 										<p>The guys showed up around 9am. The guy in charge walked me through the steps and was very informative on the proper way of moving. Once I signed the contract the guys started working and they were great. There were 3 of them so the so the move went pretty fast. They wrapped all of my furniture and took good care of the fragile items. They didn't damage anything the whole move. They were very courteous and professional. I was amazed on how smooth the move went. I would definitely use this company again. If anybody needs a moving company I would definitely recommend this one.</p>
 									</div>
-									<p><a href="#">Read on Yelp</a></p>
+									<p><a target="_blank" href="https://www.yelp.com/biz/west-coast-moving-company-santa-ana-3?hrid=lRR4SLdSrButOg2fDz61zA&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">Read on Yelp</a></p>
 								</div>
 
 								<!-- #8 -->
@@ -412,7 +413,7 @@
 									<div class="rev-text">
 										<p>Absolutely amazing service! We were moving our large 3500sf household into a storage unit... Crew was on time very nice, professional and worked hard the entire day without any hesitation. They made the experience so much easier and less stressful! We I'll be calling them again in a month to move us out of the storage unit into our new house.</p>
 									</div>
-									<p><a href="#">Read on Yelp</a></p>
+									<p><a target="_blank" href="https://www.yelp.com/biz/west-coast-moving-company-santa-ana-3?hrid=ECSLhODKgHtvaXKsjCEX5g&utm_campaign=www_review_share_popup&utm_medium=copy_link&utm_source=(direct)">Read on Yelp</a></p>
 								</div>
 
 							</div>
@@ -530,11 +531,12 @@
 
 							<div class="form-f">
 								<form>
+									<input type="hidden" name="formid" value="form.footer">
 									<div class="ness-un-ness">
 										<div class="ness">
 											<label for="phone-f">
 												<span>Phone number</span>
-												<input type="text" id="phone-f" name="phone" placeholder="Phone" required>
+												<input type="text" pattern="(\+?\d[- .]*){7,13}" id="phone-f" name="phone" placeholder="Phone" required>
 											</label>
 											<label for="email-f">
 												<span>Email address</span>
@@ -545,28 +547,40 @@
 											<div class="moving">
 												<label for="move-from-f">
 													<span>Moving From</span>
-													<input type="text" id="move-from-f" name="move-from" placeholder="Zip code">
+													<input type="text" pattern="[0-9]{5}" title="Ex. 12345" id="move-from-f" name="zip" placeholder="Zip code">
 												</label>
 												<label for="move-to-f">
 													<span>Moving To</span>
-													<input type="text" id="move-to-f" name="move-to" placeholder="Zip code">
+													<input type="text" pattern="[0-9]{5}" title="Ex. 54321" id="move-to-f" name="zipto" placeholder="Zip code">
 												</label>
 											</div>
 											<div class="another">
 												<label for="size-f">
 													<span>Size of move</span>
-													<input type="text" id="size-f" name="size" placeholder="Size">
+													<!--<input type="text" id="size-f" name="size" placeholder="Size">-->
+													<select class="form-control" name="size" id="size-f">
+														<option disabled selected="">Size Of Move</option>
+														<option value="Studio">Few items</option>
+														<option value="Studio">Studio</option>
+														<option value="1 Bedroom">1 Bedroom</option>
+														<option value="2 Bedroom">2 Bedroom</option>
+														<option value="3 Bedroom">3 Bedroom</option>
+														<option value="4 Bedroom">4 Bedroom</option>
+														<option value="House">House</option>
+														<option value="Office">Office</option>
+														<option value="Other">Other</option>
+													</select>
 												</label>
 												<label for="date-f">
 													<span>Move Date</span>
-													<input type="text" id="date-f" name="date" placeholder="Date">
+													<input type="text" class="date" id="date-f" name="date" placeholder="Date">
 												</label>
 											</div>
 										</div>
 									</div>
 									<label for="txt-f">
 										<span>Additional Information</span>
-										<textarea name="txt" id="txt-f" placeholder="Information about your move (Recommended)"></textarea>
+										<textarea name="text" id="txt-f" placeholder="Information about your move (Recommended)"></textarea>
 									</label>
 									<input type="submit" value="GET FREE QUOTE">
 									<p>We don't share your information.</p>
@@ -607,9 +621,141 @@
 		</div>
 	</footer>
 
+	<!-- @@@@ POPUP FREE QUOTE @@@@ -->
+	<div id="popup-quote" class="popup-hid">
+		<div class="popup popup-form">
+			<div class="close"></div>
+			<div class="form-popup-wrap">
+				<h2>Leave the application<span>and our manager will contact you.</span></h2>
+
+				<div class="form-f form-small form-quote">
+					<form id="small-form">
+						<input type="hidden" name="formid" value="form.free.quote.header">
+						<div class="wrap-div">
+							<div class="ness-un-ness">
+								<div class="ness">
+									<label for="phone-b">
+										<span>Phone number</span>
+										<input type="text" pattern="(\+?\d[- .]*){7,13}" id="phone-b" name="phone" placeholder="Phone" required="">
+									</label>
+									<label for="email-b">
+										<span>Email address</span>
+										<input type="text" id="email-b" name="email" placeholder="Email" required="">
+									</label>
+								</div>
+							</div>
+							<label for="txt-b">
+								<span>Additional Information</span>
+								<textarea name="text" id="txt-b" placeholder="Information about your move (Recommended)"></textarea>
+							</label>
+						</div>
+
+						<input type="submit" value="GET FREE QUOTE" form="small-form">
+						<p>We don't share your information.</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- @@@@ POPUP form Book Now @@@@ -->
+	<div id="popup-book-now" class="popup-hid">
+		<div class="popup popup-form">
+			<div class="close"></div>
+			<div class="form-popup-wrap">
+				<h2>Leave the application<span>and our manager will contact you.</span></h2>
+
+				<div class="form-f form-small">
+					<form>
+						<input type="hidden" name="formid" value="form.book.now">
+						<div class="wrap-div">
+							<div class="ness-un-ness">
+								<div class="ness">
+									<label for="phone-s">
+										<span>Phone number</span>
+										<input type="text" pattern="(\+?\d[- .]*){7,13}" id="phone-s" name="phone" placeholder="Phone" required="">
+									</label>
+									<label for="email-s">
+										<span>Email address</span>
+										<input type="text" id="email-s" name="email" placeholder="Email" required="">
+									</label>
+								</div>
+								<div class="un-ness">
+									<div class="another">
+										<label for="size-s">
+											<span>Size of move</span>
+											<!--<input type="text" id="size-f" name="size" placeholder="Size">-->
+											<select class="form-control" name="size" id="size-s">
+												<option disabled="" selected="">Size Of Move</option>
+												<option value="Studio">Few items</option>
+												<option value="Studio">Studio</option>
+												<option value="1 Bedroom">1 Bedroom</option>
+												<option value="2 Bedroom">2 Bedroom</option>
+												<option value="3 Bedroom">3 Bedroom</option>
+												<option value="4 Bedroom">4 Bedroom</option>
+												<option value="House">House</option>
+												<option value="Office">Office</option>
+												<option value="Other">Other</option>
+											</select>
+										</label>
+										<label for="date-s">
+											<span>Move Date</span>
+											<input type="text" class="date" id="date-s" name="date" placeholder="Date">
+										</label>
+									</div>
+								</div>
+							</div>
+							<label for="txt-s">
+								<span>Additional Information</span>
+								<textarea name="text" id="txt-s" placeholder="Information about your move (Recommended)"></textarea>
+							</label>
+						</div>
+
+						<input type="submit" value="ORDER NOW" form="small-form">
+						<p>We don't share your information.</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- @@@@ POPUP FORM GOOD@@@@ -->
+	<div id="popup-ok" class="popup-hid">
+		<div class="popup">
+			<div class="close"></div>
+			<div class="popup-sms">
+				<img src="img/ok.svg" alt="sms">
+				<div class="sms-txt">
+					<h3>Request Sent!</h3>
+					<p>Our manager will contact you shortly to refine the cost.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- @@@@ POPUP ERROR @@@@ -->
+	<div id="popup-error" class="popup-hid">
+		<div class="popup">
+			<div class="close"></div>
+			<div class="popup-sms">
+				<img src="img/error.svg" alt="sms">
+				<div class="sms-txt">
+					<h3>There was a problem!</h3>
+					<p>Try to send again or at another time.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="libs/js-webshim/minified/polyfiller.js"></script>
+	<script>
+        webshim.activeLang('en');
+        webshims.polyfill('forms');
+        webshims.cfg.no$Switch = true;
+	</script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="libs/page2scroll/scroll2id.js"></script>
-	
 	<script src="js/common.js"></script>
 	
 </body>
